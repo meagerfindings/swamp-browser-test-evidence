@@ -1,0 +1,22 @@
+{
+  "extension": "@mgreten/browser-test-evidence",
+  "version": "2026.08.24.1",
+  "reviewedAt": "2026-08-24T12:00:00Z",
+  "dimensions": [
+    { "id": "credentials-secrets", "verdict": "pass", "note": "No credentials are accepted; provenance URLs reject credentials, queries, and fragments. Retained failure text is documented as potentially sensitive evidence." },
+    { "id": "logging-quality", "verdict": "pass", "note": "Entry, replay, and successful persistence use structured info logs without report contents." },
+    { "id": "error-handling", "verdict": "pass", "note": "File, size, schema, hash, and identity checks precede persistence; errors identify the failing constraint." },
+    { "id": "testing-completeness", "verdict": "pass", "note": "Model test context covers writes, replay, conflict, subsequent versions, malformed input, reporter extras, unions, and unsafe provenance." },
+    { "id": "idempotency-resilience", "verdict": "pass", "note": "Same-run identical replay is a no-op, same-run conflict is rejected, and later runs append versions to the retained environment stream." },
+    { "id": "api-contracts", "verdict": "na", "note": "No external API calls." },
+    { "id": "resource-management", "verdict": "pass", "note": "Input is stat-bounded to 5 MB before allocation and no persistent handles or temporary files are created by the model." },
+    { "id": "published-surface-hygiene", "verdict": "pass", "note": "Documentation and fixtures use synthetic example domains and identifiers." },
+    { "id": "schema-strictness", "verdict": "pass", "note": "Published arguments and output resources are strict; extensible Playwright envelopes strip extras and metadata uses an explicit primitive union without object coercion." },
+    { "id": "lifetime-gc", "verdict": "pass", "note": "Evidence has infinite lifetime and bounded version garbage collection matching the retained type." },
+    { "id": "crud-completeness", "verdict": "na", "note": "Append-only evidence recorder, not a CRUD lifecycle model." },
+    { "id": "preflight-checks", "verdict": "na", "note": "No external mutation or authority; the method only validates and persists evidence." },
+    { "id": "instance-names", "verdict": "pass", "note": "One browser-<environment> stream preserves all active Moment Savor query and workflow consumers." },
+    { "id": "data-access", "verdict": "pass", "note": "Replay and stream state are read through readResource." },
+    { "id": "version-upgrades", "verdict": "pass", "note": "The 2026.08.24.1 bump includes an identity global-attributes upgrade from the retained no-global-arguments model." }
+  ]
+}
