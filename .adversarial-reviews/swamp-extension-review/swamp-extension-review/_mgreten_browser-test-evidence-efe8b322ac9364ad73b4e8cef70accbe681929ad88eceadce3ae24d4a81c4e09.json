@@ -1,0 +1,22 @@
+{
+  "extension": "@mgreten/browser-test-evidence",
+  "version": "2026.08.28.1",
+  "reviewedAt": "2026-08-28T20:38:00Z",
+  "dimensions": [
+    { "id": "credentials-secrets", "verdict": "pass" },
+    { "id": "logging-quality", "verdict": "pass" },
+    { "id": "error-handling", "verdict": "pass" },
+    { "id": "testing-completeness", "verdict": "pass" },
+    { "id": "idempotency-resilience", "verdict": "pass" },
+    { "id": "api-contracts", "verdict": "na", "note": "No external API calls." },
+    { "id": "resource-management", "verdict": "pass" },
+    { "id": "published-surface-hygiene", "verdict": "pass" },
+    { "id": "schema-strictness", "verdict": "pass" },
+    { "id": "lifetime-gc", "verdict": "pass" },
+    { "id": "crud-completeness", "verdict": "na", "note": "Append-only evidence model, not a CRUD lifecycle." },
+    { "id": "preflight-checks", "verdict": "na", "note": "No external mutation." },
+    { "id": "instance-names", "verdict": "pass" },
+    { "id": "data-access", "verdict": "pass" },
+    { "id": "version-upgrades", "verdict": "pass" }
+  ]
+}

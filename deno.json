@@ -5,7 +5,7 @@
     }
   },
   "fmt": {
-    "lineWidth": 88,
+    "lineWidth": 80,
     "indentWidth": 2,
     "semiColons": true,
     "singleQuote": false
